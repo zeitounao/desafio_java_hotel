@@ -4,16 +4,16 @@
     var tabs = {};
 
     function changeElementClass(element, classValue) {
-        if (element.getAttribute("className")) {
-            element.setAttribute("className", classValue);
+        if (element.getAttribute("classnome")) {
+            element.setAttribute("classnome", classValue);
         } else {
             element.setAttribute("class", classValue);
         }
     }
 
     function getClassAttribute(element) {
-        if (element.getAttribute("className")) {
-            return element.getAttribute("className");
+        if (element.getAttribute("classnome")) {
+            return element.getAttribute("classnome");
         } else {
             return element.getAttribute("class");
         }
@@ -49,10 +49,10 @@
     }
 
     function findCodeBlocks() {
-        var spans = document.getElementById("tabs").getElementsByTagName("span");
+        var spans = document.getElementById("tabs").getElementsByTagnome("span");
         var codeBlocks = [];
         for (var i = 0; i < spans.length; ++i) {
-            if (spans[i].className.indexOf("code") >= 0) {
+            if (spans[i].classnome.indexOf("code") >= 0) {
                 codeBlocks.push(spans[i]);
             }
         }
@@ -166,15 +166,15 @@
         return titles;
     }
 
-    function findChildElements(container, name, targetClass) {
+    function findChildElements(container, nome, targetClass) {
         var elements = [];
         var children = container.childNodes;
 
         for (var i = 0; i < children.length; i++) {
             var child = children.item(i);
 
-            if (child.nodeType === 1 && child.nodeName === name) {
-                if (targetClass && child.className.indexOf(targetClass) < 0) {
+            if (child.nodeType === 1 && child.nodenome === nome) {
+                if (targetClass && child.classnome.indexOf(targetClass) < 0) {
                     continue;
                 }
 

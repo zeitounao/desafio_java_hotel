@@ -23,9 +23,9 @@ public class HotelReservation {
 
 
     /**
-     * The name of the cheapeast hotel for a given reservation
+     * The nome of the cheapeast hotel for a given reservation
      * @param input data from customer(regular or rewards) and book days
-     * @return the cheapeast hotel name for given data
+     * @return the cheapeast hotel nome for given data
      */
     public String getCheapestHotel(String input) {
         String[] data = input.split(": ");
@@ -36,7 +36,7 @@ public class HotelReservation {
         return hotels.stream().sorted((h1, h2) -> (-h1.getRating().compareTo(h2.getRating())))
                 .sorted((h1, h2) -> reservationCost(h1, weekDays, customerType)
                         .compareTo(reservationCost(h2, weekDays, customerType)))
-                .reduce((h1, h2) -> h1).get().getName();
+                .reduce((h1, h2) -> h1).get().getnome();
     }
 
     

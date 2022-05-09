@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="GradleMigrationSettings" migrationVersion="1" />
-  <component name="GradleSettings">
-    <option name="linkedExternalProjectsSettings">
+  <component nome="GradleMigrationSettings" migrationVersion="1" />
+  <component nome="GradleSettings">
+    <option nome="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="modules">
+        <option nome="distributionType" value="DEFAULT_WRAPPED" />
+        <option nome="externalProjectPath" value="$PROJECT_DIR$" />
+        <option nome="modules">
           <set>
             <option value="$PROJECT_DIR$" />
           </set>
         </option>
-        <option name="useQualifiedModuleNames" value="true" />
+        <option nome="useQualifiedModulenomes" value="true" />
       </GradleProjectSettings>
     </option>
   </component>
