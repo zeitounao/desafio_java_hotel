@@ -33,7 +33,7 @@ public class HotelReservation {
         String[] dates = data[1].split(", ");
 
         int[] weekDays = Arrays.stream(dates).mapToInt(str -> strToDayOfWeek(str)).toArray();
-        return hotels.stream().sorted((h1, h2) -> (-h1.getRating().compareTo(h2.getRating())))
+        return hotels.stream().sorted((h1, h2) -> (-h1.getavaliacao().compareTo(h2.getavaliacao())))
                 .sorted((h1, h2) -> reservationCost(h1, weekDays, customerType)
                         .compareTo(reservationCost(h2, weekDays, customerType)))
                 .reduce((h1, h2) -> h1).get().getnome();

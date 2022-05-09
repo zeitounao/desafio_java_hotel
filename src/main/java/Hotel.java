@@ -2,7 +2,7 @@
 
 public class Hotel {
     private String nome;
-    private Integer rating;
+    private Integer avaliacao;
     private Double weekRegularPrice;
     private Double weekendRegularPrice;
     private Double weekRewardPrice;
@@ -10,10 +10,10 @@ public class Hotel {
     
    
 
-    public Hotel(String nome, Integer rating, Double weekRegularPrice, Double weekendRegularPrice,
+    public Hotel(String nome, Integer avaliacao, Double weekRegularPrice, Double weekendRegularPrice,
             Double weekRewardPrice, Double weekendRewardPrice) {
         this.nome = nome;
-        this.rating = rating;
+        this.avaliacao = avaliacao;
         this.weekRegularPrice = weekRegularPrice;
         this.weekendRegularPrice = weekendRegularPrice;
         this.weekRewardPrice = weekRewardPrice;
@@ -34,14 +34,14 @@ public class Hotel {
 
 
 
-    public Integer getRating() {
-        return rating;
+    public Integer getavaliacao() {
+        return avaliacao;
     }
 
 
 
-    public void setRating(Integer rating) {
-        this.rating = rating;
+    public void setavaliacao(Integer avaliacao) {
+        this.avaliacao = avaliacao;
     }
 
 
