@@ -3,93 +3,93 @@
 public class Hotel {
     private String nome;
     private Integer avaliacao;
-    private Double weekRegularPrice;
-    private Double weekendRegularPrice;
-    private Double weekRewardPrice;
-    private Double weekendRewardPrice;
+    private Double preco_regular_semana;
+    private Double preco_regular_fim_da_semana;
+    private Double preco_Reward_semana;
+    private Double preco_Reward_fim_da_semana;
     
    
 
-    public Hotel(String nome, Integer avaliacao, Double weekRegularPrice, Double weekendRegularPrice,
-            Double weekRewardPrice, Double weekendRewardPrice) {
+    public Hotel(String nome, Integer avaliacao, Double preco_regular_semana, Double preco_regular_fim_da_semana,
+            Double preco_Reward_semana, Double preco_Reward_fim_da_semana) {
         this.nome = nome;
         this.avaliacao = avaliacao;
-        this.weekRegularPrice = weekRegularPrice;
-        this.weekendRegularPrice = weekendRegularPrice;
-        this.weekRewardPrice = weekRewardPrice;
-        this.weekendRewardPrice = weekendRewardPrice;
+        this.preco_regular_semana = preco_regular_semana;
+        this.preco_regular_fim_da_semana = preco_regular_fim_da_semana;
+        this.preco_Reward_semana = preco_Reward_semana;
+        this.preco_Reward_fim_da_semana = preco_Reward_fim_da_semana;
     }
 
 
 
-    public String getnome() {
+    public String get nome() {
         return nome;
     }
 
 
 
-    public void setnome(String nome) {
+    public void set nome(String nome) {
         this.nome = nome;
     }
 
 
 
-    public Integer getavaliacao() {
+    public Integer get avaliacao() {
         return avaliacao;
     }
 
 
 
-    public void setavaliacao(Integer avaliacao) {
+    public void set avaliacao(Integer avaliacao) {
         this.avaliacao = avaliacao;
     }
 
 
 
-    public Double getWeekRegularPrice() {
-        return weekRegularPrice;
+    public Double get preco_regular_semana() {
+        return preco_regular_semana;
     }
 
 
 
-    public void setWeekRegularPrice(Double weekRegularPrice) {
-        this.weekRegularPrice = weekRegularPrice;
+    public void set preco_regular_semana(Double preco_regular_semana) {
+        this.preco_regular_semana = preco_regular_semana;
     }
 
 
 
-    public Double getWeekendRegularPrice() {
-        return weekendRegularPrice;
+    public Double get preco_regular_fim_da_semana() {
+        return preco_regular_fim_da_semana;
     }
 
 
 
-    public void setWeekendRegularPrice(Double weekendRegularPrice) {
-        this.weekendRegularPrice = weekendRegularPrice;
+    public void set preco_regular_fim_da_semana(Double preco_regular_fim_da_semana) {
+        this.preco_regular_fim_da_semana = preco_regular_fim_da_semana;
     }
 
 
 
-    public Double getWeekRewardPrice() {
-        return weekRewardPrice;
+    public Double get preco_Reward_semana() {
+        return preco_Reward_semana;
     }
 
 
 
-    public void setWeekRewardPrice(Double weekRewardPrice) {
-        this.weekRewardPrice = weekRewardPrice;
+    public void set preco_Reward_semana(Double preco_Reward_semana) {
+        this.preco_Reward_semana = preco_Reward_semana;
     }
 
 
 
-    public Double getWeekendRewardPrice() {
-        return weekendRewardPrice;
+    public Double get preco_Reward_fim_da_semana() {
+        return preco_Reward_fim_da_semana;
     }
 
 
 
-    public void setWeekendRewardPrice(Double weekendRewardPrice) {
-        this.weekendRewardPrice = weekendRewardPrice;
+    public void set preco_Reward_fim_da_semana(Double preco_Reward_fim_da_semana) {
+        this.preco_Reward_fim_da_semana = preco_Reward_fim_da_semana;
     }
 
 }
