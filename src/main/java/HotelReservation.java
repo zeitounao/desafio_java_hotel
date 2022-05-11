@@ -54,18 +54,18 @@ public class HotelReservation {
             case "Regular":
                 sum = Arrays.stream(weekDays).mapToDouble(wd -> {
                     if (wd > 1 && wd < 7)
-                        return hotel.getWeekRegularPrice();
+                        return hotel.getpreco_regular_semana();
                     else
-                        return hotel.getWeekendRegularPrice();
+                        return hotel.getpreco_regular_fim_da_semana();
                 }).sum();
 
                 break;
             case "Rewards":
                 sum = Arrays.stream(weekDays).mapToDouble(wd -> {
                     if (wd > 1 && wd < 7)
-                        return hotel.getWeekRewardPrice();
+                        return hotel.getpreco_Reward_semana();
                     else
-                        return hotel.getWeekendRewardPrice();
+                        return hotel.getpreco_Reward_fim_da_semana();
                 }).sum();
 
                 break;
